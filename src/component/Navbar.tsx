@@ -19,6 +19,9 @@ export const Navbar = () => {
       <NavLink style={navLinkStyles} to="productspage">
         Products
       </NavLink>
+      <NavLink style={navLinkStyles} to="user">
+        User
+      </NavLink>
     </nav>
   );
 };

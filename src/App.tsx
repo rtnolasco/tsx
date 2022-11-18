@@ -9,6 +9,9 @@ import "./App.css";
 import { ProductsPage } from "./component/ProductsPage";
 import { FeaturedProducts } from "./component/FeaturedProducts";
 import { NewProducts } from "./component/NewProducts";
+import { User } from "./component/User";
+import { UserDetails } from "./component/UserDetails";
+import { Admin } from "./component/Admin";
 
 // import people from "./Query/people";
 
@@ -24,7 +27,10 @@ function App() {
           <Route path="fetured-products" element={<FeaturedProducts />} />
           <Route path="new-products" element={<NewProducts />} />
         </Route>
-
+        <Route path="user" element={<User />}>
+          <Route path=":userid" element={<UserDetails />} />
+          <Route path="admin" element={<Admin />} />
+        </Route>
         <Route path="/*" element={<NoMatch />}></Route>
       </Routes>
     </>
