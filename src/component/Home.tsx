@@ -1,8 +1,5 @@
 import React from "react";
 import { useState } from "react";
-// import Users from "/Users";
-// import List from "/list";
-// import IState from "../utils/utils";
 import Users from "./Users";
 import List from "./list";
 import IState from "../utils/utils";
